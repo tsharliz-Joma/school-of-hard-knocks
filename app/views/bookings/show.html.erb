@@ -1,0 +1,25 @@
+<h1> Confirm your session </h1>
+
+<div>
+    <p class="black">Session Booked With:</p>
+    <div class="trainerBookingImg">
+        <%= image_tag @booking.trainer.image %>
+    </div>
+    <span class="black">On:</span> <%= @booking.datetime.strftime("%B %e, %Y") %> 
+    <span class="black">At:</span> <%= @booking.datetime.strftime("%H:%M:%S") %>
+
+    <div class="gif-padding">
+        <span class="black">"<%= @booking.trainer.name %> At the ready "</span>
+<hr>
+        <p><em>Look out for an email from sohn@fightclub.com</em></p>
+    </div>
+    <div class="gif-padding">
+        <button class="btn btn-outline-dark">
+            <%= link_to "Confirm", root_path %>
+        </button>
+    </div>
+<div>
+    
+
+
+

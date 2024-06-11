@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Monda:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap");
+
+body h1 {
+  font-weight: bold;
+  color: grey;
+  font-family: "Monda", sans-serif;
+  padding-top: 30px;
+  margin-top: 30px;
+  font-size: 3em;
+}
+
+body {
+  min-width: 100vw;
+}
+
+.trainer {
+  width: 300px;
+  height: 300px;
+  border-radius: 5px;
+  transition: transform 0.99s;
+  margin: 20px auto;
+}
+
+.homeTextImgDisplay {
+  margin: 100px 0;
+  padding: 50px 0;
+  line-height: 2em;
+  transition: transform 0.5s;
+  margin: 200px 0;
+}
+
+.homeTextImgDisplay:hover {
+  background-color: lightgrey;
+  border-radius: 5px;
+  transform: scale(1.05);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 350px;
+  background-color: black;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+}
+
+.header-container h1 {
+  z-index: 3;
+}
+
+.header-hero {
+  z-index: 2;
+  display: flex;
+  position: relative;
+  height: "100%";
+}
+
+
+.header-container,
+footer {
+  z-index: 1;
+  padding: 100px 0px;
+  background-color: black;
+  text-align: center;
+  min-width: 100%;
+  overflow-y: hidden;
+}
+
+footer {
+  height: 500px;
+}
+
+.blue,
+.red,
+.green {
+  height: 100px;
+  color: whitesmoke;
+}
+
+.blue {
+  background-color: rgba(0, 0, 255, 0.8);
+}
+
+.red {
+  background-color: rgba(255, 217, 0, 0.8);
+}
+
+.green {
+  background-color: rgba(255, 0, 0, 0.8);
+}
+
+.black {
+  color: black;
+  font-size: 1.25em;
+}
+
+.grey {
+  color: grey;
+}
+
+footer ul {
+  padding: 10px 0;
+  font-size: 1.25em;
+}
+
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+ul,
+ul li {
+  list-style: none;
+  display: inline-block;
+  padding-left: 20px;
+  padding-top: 5px;
+  letter-spacing: 2px;
+  margin-left: -20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.nav {
+  display: inline-flex;
+  justify-content: space-between;
+  z-index: 1;
+  position: fixed;
+
+  font-size: 32px;
+}
+
+.nav ul li {
+  margin: 0 80px;
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+}
+
+.users {
+  width: 1000px;
+}
+
+.homeImgContainer {
+  height: 700px;
+  margin: 150px 0;
+  transition: transform 0.9s;
+}
+
+.homeImgContainer:hover {
+  opacity: 0.9;
+  transform: scale(1.02);
+  background-color: lightgrey;
+}
+
+.trainersContainer {
+  height: 100%;
+  margin: 0 auto;
+}
+.trainer-inner {
+  max-width: 80%;
+  margin: 0 auto;
+  justify-content: space-around;
+}
+.trainer-card {
+  width: 50%;
+}
+.trainer-outer {
+  display: flex;
+}
+
+/* ====================LOGIN FORM=========================== */
+.boxing-ring {
+  position: absolute;
+  display: flex;
+  right: 100px;
+  bottom: 550px;
+}
+
+.speed-bag {
+  position: absolute;
+  display: flex;
+  left: 100px;
+  top: -15px;
+}
+
+.boxing-ring img {
+  width: 600px;
+}
+.font-space {
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.form-body {
+  display: flex;
+  max-width: 100%;
+  min-height: 122vh;
+  background: linear-gradient(#009ffd, #2a2a72, #002ffe);
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1 1;
+  z-index: 2;
+}
+
+.form-container {
+  max-width: 50%;
+  height: 100%;
+  margin: 20px 0;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  z-index: inherit;
+}
+
+.form-container .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.form-container form .user-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+form .user-info .input-box {
+  margin: 20px 0 12px 0;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-info .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-info .input-box input {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+  width: 100%;
+  outline: none;
+  color: #fff;
+  background: linear-gradient(#ff0000, #990000);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  border-radius: 5px;
+  border: none;
+}
+
+.bookings,
+#location {
+  font-size: 1.5em;
+}
+
+.gif-padding {
+  height: 100px;
+}
+
+.btn {
+  color: inherit;
+  text-decoration: none;
+  padding: 25px 50px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.above-footer {
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  font-family: "Caveat", cursive;
+}
+
+.above-footer div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}

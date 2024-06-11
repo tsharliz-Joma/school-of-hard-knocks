@@ -1,0 +1,29 @@
+
+
+<div class="trainersContainer">
+    <div class="trainer-inner">
+    <h1>Trainers </h1>
+    <% @trainers.each do |trainer|  %> 
+        <h1> <%= trainer.name %> </h1>
+
+        <div class="trainer-outer">
+            <div class="trainer-card">
+                <%= link_to image_tag(trainer.image, :class => "trainer"), trainer if trainer.image.present? %>
+                    <ul>
+                        <li class="bold black"> <strong>Speciality:</strong> <%= trainer.speciality %> </li>
+                        <br>
+                        <li class="bold black"><strong>Favourite Quote:</strong>Lorem ipsum dolor sit amet, con
+                        sectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat</li>
+                        <br>
+                        <li class="bold black"><strong>Cheat Meal: </strong>  Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </li>
+                    </ul>
+            </div>
+        </div>
+    <% end %>
+    </div>
+</div>
+
+

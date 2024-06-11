@@ -1,0 +1,43 @@
+
+
+<% if @user.errors.any? %>
+    <% @user.errors.full_messages.each do |msg| %>
+        <li> <%= msg %> </li>
+        <% end %>
+<% end %>
+
+<div class="body-of-form">
+
+
+<div class="form-body">
+    <div class="form-container">
+        <div class="title">Registration</div>
+        <%= form_for @user do |f|%>
+            <div class="user-info font-space">
+
+                <div class="input-box">
+                    <%= f.label :name, class: "details" %>
+                    <%= f.text_field :name, id: "name", placeholder: "Enter Your Name" %>
+                </div>
+                <div class="input-box">
+                    <%= f.label :email, class: "details" %>
+                    <%= f.text_field :email, id: "email", placeholder: "Enter Your Email" %>
+                </div>
+                <div class="input-box">
+                    <%= f.label :password, class: "details" %>
+                    <%= f.password_field :password, id: "password", placeholder: "Enter a Password" %>
+                </div>
+                <div class="input-box">
+                    <%= f.label :password_confirmation , class: "details"%>
+                    <%= f.password_field :password_confirmation, id: "password_confirmation", placeholder: "Enter Password Again" %>
+                </div>
+            </div>
+            <%= f.submit "Sign up", class:"button" %>
+        <% end %>
+    <div>
+</div>
+
+
+</div>
+<div class="boxing-ring"><%= image_tag 'ring-removebg-preview.png' %></div>
+<div class="speed-bag"><%= image_tag 'sppedbag-removebg-preview.png'%></div>

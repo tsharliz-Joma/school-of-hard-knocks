@@ -1,0 +1,34 @@
+<h1> <%= @trainer.name %> </h1>
+
+<div class="container">
+    <div class="row">
+
+        <div class="col">
+            <%= image_tag @trainer.image, :class => "trainer" if @trainer.image.present? %>
+            <ul class="row">
+                <li> Speciality: <%= @trainer.speciality %> </li>
+            </ul>
+        </div>
+                    
+    </div>
+</div>
+
+<div class="controls">
+    <% if @current_trainer.present? %>
+        <%= link_to "Edit Trainer", edit_trainer_path(@trainer)%>
+                    |
+        <%= link_to "Delete Trainer", @trainer, :method => 'delete', :data => { :comfirmation => "Are you sure? " } %>
+        <% else %>
+        <ul>
+            <li> Great to be in action </li>
+        </ul>
+    <% end %>
+</div>
+        
+            
+  
+
+
+
+
+

@@ -1,0 +1,36 @@
+
+
+
+
+<div class="form-body">
+    <div class="form-container" >
+        <div class="title"> Sign Up </div> 
+        <%= form_for @user do |f|%>
+            <div class="user-info">
+                <div class="input-box">
+                    <%= f.label :name, class="details"%>
+                    <%= f.text_field :name, id="name", placeholder="Name" %>
+                </div>
+                <div class="input-box">
+                    <%= f.label :image, class="details" %>
+                    <%= f.text_field :image, id="image", placeholder="paste image url" %>
+                </div>
+                <div class="input-box">
+                    <%= f.label :favourite, class="details" %>
+                    <%= f.text_field :favourite, id="favourite", placeholder="Name Your Favourite Trainer" %>
+                </div>
+                <div class="input-box">
+                    <%= f.label :email, class="details" %>
+                    <%= f.text_field :email %>
+                </div>
+                <div class="input-box">
+                    <%= f.label :password, class="details" %>
+                    <%= f.password_field :password %>
+                </div>
+                    <%= f.submit %>
+            </div>
+        <% end %>
+    </div>
+</div>
+
+    

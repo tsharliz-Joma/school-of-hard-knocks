@@ -1,0 +1,26 @@
+<h1> Session Details </h1>
+
+<div class="tenor-gif-embed" data-postid="12187332" data-share-method="host" data-aspect-ratio="1.92308" data-width="100%">
+  <a href="https://tenor.com/view/fight-jim-carrey-boxing-gif-12187332">Fight Jim Carrey GIF</a>from <a href="https://tenor.com/search/fight-gifs">Fight GIFs</a>
+</div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+
+<div class="gif-padding"></div>
+
+  <%= form_for @booking do |f| %>
+    <label class="black"> <span class="black">Location:</span> </label>
+    <select id="location">
+        <% Booking.pluck(:location).uniq.each do |location| %>
+          <option> <%= location %> </option>
+            <% end %>
+      </select>
+      <div class="bookings" >
+        <span class="black">Date: </span><%= date_select("booking","datetime") %>
+        <br>
+        <span class="black">Time: </span><%= time_select("booking","datetime") %>
+        <br>
+        <%= f.submit %>
+  <% end %>
+
+  <div class="gif-padding"></div>
+
+</div>
