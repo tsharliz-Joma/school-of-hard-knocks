@@ -980,3 +980,26 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms | Allocations: 7759)
 
 
+Started GET "/static/img/charlesVsMatt.mp4" for ::1 at 2024-06-11 15:48:51 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/static/img/charlesVsMatt.mp4"):
+  
+Started GET "/" for ::1 at 2024-06-11 15:49:42 +1000
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 110.4ms | Allocations: 230816)
+  Rendered layout layouts/application.html.erb (Duration: 112.7ms | Allocations: 235932)
+Completed 200 OK in 116ms (Views: 113.7ms | ActiveRecord: 0.0ms | Allocations: 238503)
+
+
+Started GET "/" for ::1 at 2024-06-11 15:50:10 +1000
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1593)
+  Rendered layout layouts/application.html.erb (Duration: 9.5ms | Allocations: 6663)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms | Allocations: 7750)
+
+
